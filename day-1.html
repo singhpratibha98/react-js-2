@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingment-2(homeWork)</title>
+</head>
+<body>
+
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script>
+        let container = React.createElement("div",{style:{width:'600px'}},
+        React.createElement("h1",null,"Topics covered"),
+        React.createElement("p",null,"The following is a list of all the topics we cover in the MDN learning area."),
+        React.createElement("br",null,),
+        React.createElement("a",{href: 'Getting started with the web'},"Getting started with the web"),
+        React.createElement("p",null,"Provides a practical introduction to web development for complete beginners."),
+        React.createElement("a",{href: 'HTML — Structuring the web'},"HTML — Structuring the web"),
+        React.createElement("p",null,"HTML is the language that we use to structure the different parts of our content and define what their meaning or purpose is. This topic teaches HTML in detail."),
+        React.createElement("a",{href: 'CSS — Styling the web'},"CSS — Styling the web"),
+        React.createElement("p",null,"CSS is the language that we use to control our web content's style and layout, as well as adding behavior like animation. This topic provides comprehensive coverage of CSS."),
+        );
+        ReactDOM.render(container,document.getElementById('root'));
+    </script>
+</body>
+</html>
